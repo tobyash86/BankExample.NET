@@ -38,7 +38,7 @@ jobs:
         with:
           # Path to working directory.
           installDir: c:\Program Files\Parasoft\dotTEST\2022.2
-          testConfig: ${{workspace}}\.dottest\configs\UT+SA.properties
+          testConfig: ${{ github.workspace }}\.dottest\configs\UT+SA.properties
       
       # ---------------------------------------------------------------
       # Upload the findings into the GitHub code scanning alert section
